@@ -18,7 +18,7 @@ class LaravelRedisQueueClearCommand extends Command
      */
     public function handle(RedisManager $redis)
     {
-        $queue = $this->anticipate('Queue name?', $this->getQueues());
+        $queue = $this->choice('Queue name?', $this->getQueues());
 
         $redis->del("queues:$queue");
     }
