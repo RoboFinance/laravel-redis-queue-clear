@@ -1,3 +1,8 @@
+### Description
+Laravel package to clear queued and delayed jobs from a certain queue.
+
+Laravel Horizon mandatory.
+ 
 ### Installation
 ```bash
 composer require robo-finance/laravel-redis-queue-clear
